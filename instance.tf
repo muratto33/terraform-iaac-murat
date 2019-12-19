@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type   = "t2.micro"
   associate_public_ip_address = "true"
   key_name = aws_key_pair.deployer.key_name
-   security_groups = ["allow_ssh"]
+  security_groups = ["allow_ssh"]
 
 
 
@@ -17,3 +17,4 @@ tags = {
     Name = "HelloWorld"
   }
 }
+© 2019 GitHub, Inc.

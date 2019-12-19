@@ -17,4 +17,3 @@ tags = {
     Name = "HelloWorld"
   }
 }
-© 2019 GitHub, Inc.

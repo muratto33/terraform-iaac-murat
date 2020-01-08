@@ -1,5 +1,5 @@
-resource "aws_instance" "web" {
-  count = var.count_instance
+resource "aws_instance" "web1" {
+  count = 1
   ami             = var.ami
   instance_type   = var.instance_type
   associate_public_ip_address = var.associate_public_ip_address

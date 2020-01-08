@@ -13,7 +13,7 @@ resource "aws_instance" "web" {
       private_key = file(var.ssh_key_location)
     }
       
-  {
+  
 
    tags = {
     Name = "HelloWorld${count.index +1}"

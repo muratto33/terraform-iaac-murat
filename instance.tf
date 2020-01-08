@@ -11,19 +11,10 @@ resource "aws_instance" "web" {
       type = "ssh"
       user = var.user
       private_key = file(var.ssh_key_location)
-      }
-      inline = [
-        "sudo yum install -y epel-release",
-        "sudo yum install httpd -y",
+    }
       
-        "sudo systemctl start httpd",
-        ]
-      
+  {
 
-
-  lifecycle{
-    prevent_destroy = false
-   }
    tags = {
     Name = "HelloWorld${count.index +1}"
    }
